@@ -1,0 +1,66 @@
+
+body{
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #3f3f3f
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body{
+        width: 90%;
+    }
+}
+
+h1{
+    margin: 0;
+}
+
+header {
+    margin-top: 3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+hr {
+    border: none;
+    background-color: #f0f0f0;
+    height: 2px;
+}
+
+p{
+    font-size: large;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.project > div {
+    padding: 1em;
+}
+
+.mylinks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.mylinks > a {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
+.mylinks > a:hover{
+    text-decoration: none;
+    color:blue;
+}
