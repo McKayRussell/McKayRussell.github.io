@@ -5,8 +5,12 @@ body{
     color: #3f3f3f
 }
 
+body{
+    background-color: #dad8d2;
+}
 
-@media only screen and (max-width: 1000px) {
+
+@media only screen and (max-width: 1500px) {
     body{
         width: 90%;
     }
@@ -31,7 +35,7 @@ header {
 
 hr {
     border: none;
-    background-color: #f0f0f0;
+    background-color: #424242;
     height: 2px;
 }
 
