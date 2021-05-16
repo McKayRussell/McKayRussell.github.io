@@ -2,13 +2,9 @@ body{
     width: 50%;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
-    color: #3f3f3f
-}
-
-body{
+    color: #3f3f3f;
     background-color: #dad8d2;
 }
-
 
 @media only screen and (max-width: 1500px) {
     body{
@@ -39,6 +35,12 @@ hr {
     height: 2px;
 }
 
+hr.new1 {
+    border: none;
+    background-color:#4b4444;
+    height: 1px;
+}
+
 p{
     font-size: large;
 }
@@ -60,10 +62,10 @@ p{
 .mylinks > a {
     margin-top: 2rem;
     text-decoration: none;
-    color: #3f3f3f;
+    color: #464343;
 }
 
 .mylinks > a:hover{
     text-decoration: none;
-    color:blue;
+    color:rgb(108, 108, 179);
 }
