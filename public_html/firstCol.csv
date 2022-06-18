@@ -1,0 +1,191 @@
+Gender
+Age
+Ht (m)
+Weight (kg; H/2.205) Pre
+Weight Change (Kg)
+BMIPre
+BMI Change
+Body Fat % Pre
+Body-fat-% Change
+Visceral Fat Pre
+Visceral Fat Change
+Systolic BP Pre
+Systolic BP Change (mmHg)
+Diastolic BP Pre
+Diastolic BP Change (mmHg)
+RHR Pre
+RHR Change (BPM)
+HandGripAvPre
+HandGripAv Change
+HandGripMaxPre
+HandGripMax Change
+ChairStandPre
+ChairStand Change
+HeelRaisePre
+HeelRaise Change
+QuadStrengthAvgPre
+QuadStrengthAv Change
+QuadMaxPre
+QuadStrengthMax Change
+MaxHip abd Pre (N)
+MaxHip Abd Change
+Pre Hip
+MaxHip Change
+8ftUpAvPre
+8ftUpAv Change
+8ftUpMinPre (s)
+8ftUpMin Change
+SF12 PrePhys
+SF12 Phys Change
+SF12 PreCog
+SF12 Cog Change
+CLVT TotalTPre
+CVLT Total Change
+CLVT IR Pre
+CLVT IR Change
+CLVT SD Pre Free
+CLVT SD Change
+CLVT LD Pre Free
+CLVT LD Change
+NIH AttnPre
+NIH Attn Change
+NIH WrkMemryPre
+NIH WrkMem Change
+NIH CardSrtPre
+NIH CardSrt Change
+NIH PrcssSpdPre
+NIH ProcSpd Change
+NIH SeqMemryPre
+NIH SeqMem Change
+NIH CogCompstePre
+NIH CogComp Change
+6MinWalkDistancePreMts
+6MinWalkDistance Change (m)
+SSAvLengthPre
+SSAvLength Change
+SSAvWidthPre
+SSAvWidth Change
+SSAvVelPre
+SSAvVel Change
+SSAvCadencePre
+SSAvCadence Change
+FGAvLengthPre
+FGAvLength Change
+FGAvWidthPre
+FGAvWidth Change
+FGAvVelPre
+FGAvVel Change
+FGMaxVelPre
+FGMaxVel Change
+FGAvCadencePre
+FGAvCadence Change
+DTAvLengthPre
+DTAvLength Change
+DTAvWidthPre
+DTAvWidth Change
+DTAvVelPre
+DTAvVel Change
+DTMaxVelPre
+DTMaxVel Change
+DTAvCadencePre
+DTAvCadence Change
+Vel_COST_Pre
+Vel Cost Change
+Cog_COST_Pre
+Cog Cost Change
+L_WS_Pre
+L_WS Change
+L_Step_Pre
+L_Step Change
+L_Move_Pre
+L_Move Change
+R_WS_Pre
+R_WS Change
+R_Step_Pre
+R_Step Change
+R_Move_Pre
+R_Move Change
+Comb_WS_Pre
+Comb_WS Change
+Comb_Step_Pre
+Comb_Step Change
+Comb_Move_Pre
+Comb_Move Change
+MTS_ML_Dist_Pre
+MTS_ML_Dist Change
+MTS_ML_Excursion_Pre
+MTS_ML_Excursion Change
+MTS_ML_Vel_Pre
+MTS_ML_Vel Change
+MTS_ML_Range_Pre
+MTS_ML_Range Change
+MTS_AP_Dist_Pre
+MTS_AP_Dist Change
+MTS_AP_Excursion_Pre
+MTS_AP_Excursion Change
+MTS_AP_Vel_Pre
+MTS_AP_Vel Change
+MTS_AP_Range_Pre
+MTS_AP_Range Change
+NS_ML_Dist_Pre
+NS_ML_Dist Change
+NS_ML_Excursion_Pre
+NS_ML_Excursion Change
+NS_ML_Vel_Pre
+NS_ML_Vel Change
+NS_ML_Range_Pre
+NS_ML_Range Change
+NS_AP_Dist_Pre
+NS_AP_Dist Change
+NS_AP_Excursion_Pre
+NS_AP_Excursion Change
+NS_AP_Vel_Pre
+NS_AP_Vel Change
+NS_AP_Range_Pre
+NS_AP_Range_Post
+TS_ML_Dist_Pre
+TS_ML_Dist Change
+TS_ML_Excursion_Pre
+TS_ML_Excursion Change
+TS_ML_Vel Change
+TS_ML_Range_Pre
+TS_ML_Range Change
+TS_AP_Dist Change
+TS_AP_Excursion_Pre
+TS_AP_Excursion Change
+TS_AP_Vel_Pre
+TS_AP_Vel  Change
+TS_AP_Range_Pre
+TS_AP_Range Change
+ABC%Pre
+ABC% Change
+RPAQ M-M Pre
+RPAQ M-M Change
+CRP Pre
+CRP Change
+IFNy Pre
+IFNy Change
+IL-10 Pre
+IL-10 Change
+IL-1a Pre
+IL-1a Change
+IL-1b Pre
+IL-1b Change
+IL-6 Pre
+IL-6 Change
+TNF-a Pre
+TNF-a Change
+Time1 (min)
+Distance1 (mi)
+Strd Length 1 (cm)
+TotalSteps1
+Time2 (s)
+Distance2 (mi)
+Strd Length 2 (cm)
+TotalSteps2
+R1 Swings
+R1 Bendovers
+R1 Putts
+R2 Swings
+R2 Bendovers
+R2 Putts

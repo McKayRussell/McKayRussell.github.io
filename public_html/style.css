@@ -1,0 +1,414 @@
+/* 
+  PROJECT: Utilizing Data Mining Technologies to Analyze the Physical and
+           Cognitive Benefits of Golf Therapy on Seniors
+  AUTHORS: Steven Merino, McKay Russell,
+           Clemente Rodriguez, Zachary Scholefield
+  ADVISOR: Dr. Chengwei Lei
+  SEMESTERS: Fall 2021, Spring 2022
+*/
+
+/* Sets styles for several parts of the website */
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding-left: 1em;
+  }
+  body {
+    background-color: #ebecf0;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+  }
+  .rando {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-align:center;
+  }
+  .thesis {
+    font-family: 'Cinzel', serif;
+    text-align:center;
+    color:#CFD8DC
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #343a40;
+    color: #dddddd;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  th[scope=row] {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  }
+  th[scope=row] {
+  background: #343a40;
+}
+  th:not([scope=row]) {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .scroller {
+    text-align: center; 
+    width: 80%; 
+    height: 42%; 
+    line-height: 3em; 
+    overflow:auto; 
+    border: thin #000 solid; 
+    padding: 5px;
+  }
+  h3, hr, p{
+    color: #000;
+  }
+  
+  /* .scroller::-webkit-scrollbar {
+    width: 4px;
+  } */
+
+  [data-aos="my-animation"] {
+    transform: rotate(180deg) scale(0.1);
+    opacity: 0;
+    transition-property: transform, opacity;
+  }
+  /* After animation */
+  [data-aos="my-animation"].aos-animate {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+  [data-aos="my-animation2"] {
+    transform: rotate(-180deg) scale(0.1);
+    opacity: 0;
+    transition-property: transform, opacity;
+  }
+  /* After animation */
+  [data-aos="my-animation2"].aos-animate {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+
+  .main_header {
+    height: 55vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  /* Handle */
+::-webkit-scrollbar-thumb {
+  background: #343a40;
+}
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 3rem;
+  }
+  .card-text {
+    color: #CFD8DC
+  }
+  .card {
+    background-color: #202020;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 1rem #2aafc0,
+    0 0 0.8rem #2aafc0,
+    0 0 2.8rem #2aafc0,
+    inset 0 0 1.3rem #2aafc0;
+  }
+  hr~h3{
+    font-size: 3rem;
+    font-family: 'Cinzel', serif;
+  }
+  .card h3 {
+    margin-bottom: 2rem;
+    
+  }
+  .card img {
+    height: 300px;
+    margin: auto;
+    
+    
+  }
+  @media screen and (max-width: 480px) {
+    img {
+      width: 300px;
+    }
+  }
+  .card > div {
+    padding: 2rem;    
+  }
+  
+  @media(max-width: 638px) {
+    .card {
+      display: block;
+    }
+  }
+
+
+  .card2 {
+    background-color: #202020;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 1rem #d10303,
+    0 0 0.8rem #d10303,
+    0 0 2.8rem #d10303,
+    inset 0 0 1.3rem #d10303;
+  }
+  .card2 h3 {
+    margin-bottom: 2rem;
+    
+  }
+  .card2 img {
+    height: 300px;
+    margin: auto;
+    
+    
+  }
+  @media screen and (max-width: 480px) {
+    img {
+      width: 300px;
+    }
+  }
+  .card2 > div {
+    padding: 2rem;    
+  }
+  
+  @media(max-width: 638px) {
+    .card2 {
+      display: block;
+    }
+  }
+
+
+  .card3 {
+    background-color: #202020;
+    color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 1rem #090deb,
+    0 0 0.8rem #090deb,
+    0 0 2.8rem #090deb,
+    inset 0 0 1.3rem #090deb;
+  }
+  .card3 h3 {
+    margin-bottom: 2rem;
+    
+  }
+  .card3 img {
+    height: 300px;
+    margin: auto;
+    
+    
+  }
+  @media screen and (max-width: 480px) {
+    img {
+      width: 300px;
+    }
+  }
+  .card3 > div {
+    padding: 2rem;    
+  }
+  
+  @media(max-width: 638px) {
+    .card3 {
+      display: block;
+    }
+  }
+
+  a {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+  }
+  
+  #navbar {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #2aafc0;
+    position: fixed;
+    top: 0;
+    float: inline-start;
+    height: 30px;
+    line-height: 30px;
+    width: 100vw;
+    z-index: 10;
+  }
+  .nav-item:hover{
+    columns: #2aafc0;
+  }
+  .nav-wrapper {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+  } 
+  @media(max-width: 768px) {
+    .nav-wrapper {
+      width: 90%;
+    }
+  } 
+  @media(max-width: 638px) {
+    .nav-wrapper {
+      width: 100%;
+    }
+  } 
+  #navbar ul {
+    display: inline-block;
+    /* float: right; */
+    list-style: none;
+    /* margin-right: -14px; */
+    margin-top: -2px;
+    text-align: left;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+  }
+  .thumbnail {
+    height: auto;
+    width: 100%;
+    /* even more control with max-width */
+    max-width: 720px;
+    
+  }
+  .logo {
+    box-sizing: content-box;
+    width: 250px;    
+    /* margin-bottom: 26px; */
+    padding: .4375em 1em;
+  }
+  /* Dropdown Button */
+  .loginbtn {
+    color: rgb(13, 26, 38);
+    /* padding: 16px; */
+    /* font-size: 16px; */
+    border: none;
+    background: transparent;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black; 
+    text-align: center;
+    padding: 9px 12px;
+    text-decoration: none;
+    display: block;
+    transition: 3s;
+    font-size: 16px;
+  }
+
+  .cards {
+    width: 3em;
+  }
+  
+  * { box-sizing: border-box; }
+  body {
+    font: 16px Arial;
+  }
+  .autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+    /* max-height: 250px; height: 250px; overflow: auto; */
+  }
+  input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    overflow: auto;
+
+  }
+  input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  input[type=submit] {
+    background-color: rgb(109, 140, 170);
+    color: #fff;
+  }
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+    overflow: auto;
+  }
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+    overflow: auto;
+  }
+  .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+    overflow: auto;
+  }
+  .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: rgb(109, 140, 170) !important;
+    
+    color: #ffffff;
+    overflow: auto;
+  }
+  .searchbar {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    text-align: center;
+  }
