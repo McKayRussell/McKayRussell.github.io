@@ -2,14 +2,23 @@ body{
     width: 50%;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
-    color: #3f3f3f;
-    background-color: #dad8d2;
+    color: #4d4d4d;
+    background-color: #e0dfd9;
+}
+
+.mobile {
+    display: none;
 }
 
 @media only screen and (max-width: 1500px) {
     body{
         width: 90%;
     }
+}
+
+@media only screen and (max-width: 820px) {
+    .mobile{display: block;}
+    .desktop {display: none;}
 }
 
 h1{
